@@ -1,0 +1,38 @@
+resume.form:
+ path: '/resume/myform'
+ defaults:
+   _title: 'Application form'
+   _form: '\Drupal\resume\Form\ResumeForm'
+ requirements:
+   _permission: 'access content'
+
+work.form:
+  path: 'resume/mypage'
+  defaults:
+    _form: '\Drupal\resume\Form\WorkForm'
+    _title: 'D8 form'
+  requirements:
+    _permission: 'access content'
+resume.ExampleForm:
+  path: '/ExampleForm'
+  defaults:
+    _form: '\Drupal\resume\Form\ExampleForm'
+    _title: 'D10 config form'
+  requirements:
+    _permission: 'access content'    
+
+resume.MyModuleForm:
+  path: '/  MyModuleForm'
+  defaults:
+    _form: '\Drupal\resume\Form\MyModuleForm'
+    _title: '  MyModuleForm image page'
+  requirements:
+    _permission: 'access content'    
+
+resume.config_form:
+  path: '/admin/config/my_module'
+  defaults:
+    _form: '\Drupal\resume\Form\MyModuleConfigForm'
+    _title: 'My Module Configuration'
+  requirements:
+    _permission: 'administer site configuration'
